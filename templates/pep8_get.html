@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pep8 checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .container {
+        max-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+  <div align="center">
+      <h1><font color="CornFlowerBlue">Martin's simple Python lint checker</font></h1>
+      <form role="form" method='post' action='/check_pep8{{ ignored_codes_html }}'>
+	  <input type="hidden" name="from_get" value="True">
+          <textarea name="input_code" type="text" class="textinput" id="url-box" placeholder="Please insert your code here...
+
+
+
+
+
+─────────▄──────────────▄
+────────▌▒█───────────▄▀▒▌
+────────▌▒▒▀▄───────▄▀▒▒▒▐
+───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐                  
+───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌
+──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌
+──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌
+─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌
+─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐
+▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌
+▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐
+─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌
+─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐
+──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌
+────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
+───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
+──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀" style="width: 800px;" rows="25" autofocus required></textarea>
+          <p><button type="submit" class="btn btn-primary btn-lg">Check my code now!</button></p>
+      </form>
+      <br>
+  </div>
+  </body>
+</html>
